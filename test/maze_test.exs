@@ -6,4 +6,7 @@ defmodule MazeTest do
   test "returns an empty array" do
     assert Maze.initialize_maze(2,3) == [[0,0,0],[0,0,0]]
   end
+
+  test "returns next uncarved cell" do
+  end
 end
