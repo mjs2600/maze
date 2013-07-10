@@ -1,7 +1,7 @@
 defmodule Maze do
   def initialize_maze(width, height) do
-    Enum.map (1..width), fn(_row) ->
-      Enum.map (1..height), fn(_) -> 0 end
+    List.flatten Enum.map (1..width), fn(x) ->
+      Enum.map (1..height), fn(y) -> {x, y, 0} end
     end
   end
 
